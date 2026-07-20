@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "NeoWriter — 安静地写作，永远守护。",
+    "description": "一款安静、本地优先的纯文本写作 app，支持 iOS、macOS 与 HarmonyOS NEXT。自动保存、历史版本、回收站、备份与冲突安全的同步——守护你的每一个字。"
+  },
+  "nav": {
+    "features": "功能",
+    "platforms": "平台",
+    "pricing": "价格",
+    "download": "下载"
+  },
+  "hero": {
+    "badge": "iOS · macOS · HarmonyOS NEXT",
+    "titleLine1": "安静地写作，",
+    "titleLine2": "永远守护。",
+    "subtitle": "NeoWriter 是一款快速、本地优先的纯文本编辑器，把你的文字当作需要守护的东西——自动保存、历史版本、回收站、备份与冲突安全的同步。支持 iPhone、iPad、Mac 与 HarmonyOS NEXT。",
+    "downloadIOS": "在 iOS 下载",
+    "downloadMac": "在 Mac 获取",
+    "harmonyComingSoon": "HarmonyOS NEXT — 即将推出",
+    "mockup": {
+      "book": "随笔",
+      "title": "论守护",
+      "saved": "已保存",
+      "words": "1,204 字",
+      "line1": "写作者托付给设备的文字，应当比设备本身",
+      "line2": "更长久。当同步看到两段有效的历史，二者",
+      "line3": "都应保留。当草稿发生改变，此前的状态仍",
+      "line4": "然可以恢复——没有任何东西会被悄悄",
+      "line5": "覆盖。"
+    }
+  },
+  "platforms": {
+    "label": "一处写作，处处相随",
+    "title": "在你写作的每一台设备上原生运行。",
+    "subtitle": "每个版本都是平台原生实现，绝非网页套壳。同一套「文字守护」的不变式贯穿始终。",
+    "ios": {
+      "name": "iOS 与 iPadOS",
+      "tag": "UIKit 优先",
+      "description": "iPhone 与 iPad 优先。键盘感知的编辑器、iPad 三栏工作区、快捷指令、小组件与接力。"
+    },
+    "macos": {
+      "name": "macOS",
+      "tag": "AppKit 原生",
+      "description": "真正的 Mac app，共享同一套模型、存储与同步安全内核——没有 Catalyst 的捷径，绝不妥协。"
+    },
+    "harmony": {
+      "name": "HarmonyOS NEXT",
+      "tag": "100% ArkTS / ArkUI",
+      "description": "基于 Stage 模型的完全原生 HarmonyOS NEXT 版本——同样的零数据丢失保证，不依赖任何跨平台运行时。"
+    }
+  },
+  "features": {
+    "conservation": {
+      "label": "文字守护",
+      "title": "你的文字，",
+      "titleHighlight": "扛得住一切。",
+      "description": "每一次按键都会本地自动保存。每一次有意义的编辑都会生成可回滚的版本。删除的文章会在回收站保留 30 天。当系统不确定时，它会保留更多文字——而非更少。"
+    },
+    "markdown": {
+      "label": "Markdown 模式",
+      "title": "读起来像散文的",
+      "titleHighlight": "Markdown。",
+      "description": "输入 bold、italic 或 code，离开那一行后符号会淡去，正文读起来就像已发布的页面。光标回来时符号又会出现，随时可编辑。标题、引用、列表、表格与代码都以渲染形态内联显示。"
+    },
+    "history": {
+      "label": "历史版本",
+      "title": "回滚到任何",
+      "titleHighlight": "更早的草稿。",
+      "description": "可见的历史版本会在每次有意义的改动前捕捉先前状态。恢复旧草稿时，你替换掉的版本会作为更新的恢复快照保留下来——恢复是一条路径，而非一场赌博。"
+    },
+    "sync": {
+      "label": "冲突安全的同步",
+      "title": "两段历史？",
+      "titleHighlight": "都留下。",
+      "description": "NeoWriter 没有后端。同步走你自己的 iCloud 或任何你信任的 WebDAV 服务器。当两台设备产生分歧时，传入的版本会保存为冲突副本——你的文字永远不会被悄悄覆盖。"
+    },
+    "platforms": {
+      "label": "真正的跨平台",
+      "title": "此处写，",
+      "titleHighlight": "彼处续。",
+      "description": "iPhone、iPad、Mac 与 HarmonyOS NEXT——每一个都是原生 app，每一个都带着同样的守护保证。在车上开个头，在桌前收个尾，全程安全。"
+    }
+  },
+  "grid": {
+    "title": "认真写作的人，需要的都在这里。",
+    "subtitle": "默认安静——需要时才强大。",
+    "items": {
+      "autosave": { "title": "自动保存", "description": "每一次按键都本地保存" },
+      "trash": { "title": "30 天回收站", "description": "删除也可恢复" },
+      "backup": { "title": "本地备份", "description": "校验后恢复，无需云端" },
+      "find": { "title": "查找替换", "description": "文档内快速搜索" },
+      "outline": { "title": "大纲", "description": "在长文中自如导航" },
+      "statistics": { "title": "写作统计", "description": "字数、字符与阅读时长" },
+      "sprint": { "title": "冲刺计时", "description": "专注的写作时段" },
+      "goal": { "title": "每日目标", "description": "养成写作习惯" },
+      "export": { "title": "导出", "description": "TXT、Markdown、PDF 等" },
+      "privacyLock": { "title": "隐私锁", "description": "Face ID 与安全模式" },
+      "shortcuts": { "title": "键盘快捷键", "description": "Cmd+B / Cmd+I / Cmd+K" },
+      "typewriter": { "title": "打字机模式", "description": "让光标始终在视野内" }
+    }
+  },
+  "privacy": {
+    "title": "没有账号。没有服务器。",
+    "titleHighlight": "没有追踪。",
+    "subtitle": "NeoWriter 没有后端。你的文字存在你的设备上——只经过你选择的云。",
+    "local": {
+      "title": "本地优先",
+      "description": "你的资料库存在设备上。编辑、自动保存、历史与回收站，从不依赖网络或账号。"
+    },
+    "yourCloud": {
+      "title": "你的云，你做主",
+      "description": "通过你自己的 iCloud 或任何 WebDAV 服务器同步——坚果云、Nextcloud、ownCloud、你自己搭的服务器。你的文字不会被放进任何不必要的数据库。"
+    },
+    "noTracking": {
+      "title": "零追踪",
+      "description": "没有数据分析、没有广告、没有第三方 SDK。NeoWriter 不收集个人数据。就这么简单。"
+    },
+    "conflict": {
+      "title": "绝不悄悄覆盖",
+      "description": "当同步看到两段有效历史，二者都会作为冲突副本保留。app 会保留相互竞争的编辑，而不是替你做主。"
+    }
+  },
+  "pricing": {
+    "title": "公道的价格。安全，永不设收费墙。",
+    "subtitle": "自动保存、历史、回收站、备份与冲突保护，始终免费。",
+    "free": {
+      "name": "免费版",
+      "price": "¥0",
+      "period": "永久免费",
+      "features": [
+        "本地纯文本与 Markdown 写作",
+        "自动保存与历史版本",
+        "30 天回收站与恢复",
+        "手动本地备份与校验恢复",
+        "冲突安全保护",
+        "纯文本导出与分享",
+        "隐私锁与安全模式"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "badge": "最超值",
+      "price": "¥168",
+      "period": "买断",
+      "altPricing": "或 ¥12/月 · ¥98/年",
+      "features": [
+        "包含免费版全部功能",
+        "跨设备同步（iCloud 与 WebDAV）",
+        "Word 与富文本导出预设",
+        "笔记链接与反向链接",
+        "嵌套标签与智能文件夹",
+        "主题与排版预设",
+        "未来的强力功能与 Mac 深化"
+      ]
+    }
+  },
+  "footerCTA": {
+    "title": "今天就开始写。",
+    "subtitle": "免费使用。无需账号。你的文字，永远属于你。"
+  },
+  "footer": {
+    "tagline": "安静地写作，永远守护。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "support": "支持",
+    "copyright": "© 2026 NeoWriter. 保留所有权利。"
+  }
+}

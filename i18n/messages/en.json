@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "NeoWriter — Calm writing, conserved.",
+    "description": "A calm, local-first plain-text writing app for iOS, macOS and HarmonyOS NEXT. Autosave, version history, trash, backups and conflict-safe sync — your words, protected."
+  },
+  "nav": {
+    "features": "Features",
+    "platforms": "Platforms",
+    "pricing": "Pricing",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "iOS · macOS · HarmonyOS NEXT",
+    "titleLine1": "Calm writing.",
+    "titleLine2": "Conserved.",
+    "subtitle": "NeoWriter is a fast, local-first plain-text editor that treats your words as something to protect — with autosave, version history, trash, backups and conflict-safe sync. On iPhone, iPad, Mac and HarmonyOS NEXT.",
+    "downloadIOS": "Download for iOS",
+    "downloadMac": "Get it on Mac",
+    "harmonyComingSoon": "HarmonyOS NEXT — Coming soon",
+    "mockup": {
+      "book": "Essays",
+      "title": "On Conservation",
+      "saved": "Saved",
+      "words": "1,204 words",
+      "line1": "The words a writer trusts to a device should",
+      "line2": "outlast the device itself. When sync sees two",
+      "line3": "valid histories, both should survive. When a",
+      "line4": "draft changes, the previous state stays",
+      "line5": "recoverable — nothing is quietly overwritten."
+    }
+  },
+  "platforms": {
+    "label": "One writing space, everywhere",
+    "title": "Native on every device you write with.",
+    "subtitle": "Built platform-native — never a web wrapper. The same conservation-of-writing invariants carry across each edition.",
+    "ios": {
+      "name": "iOS & iPadOS",
+      "tag": "UIKit-first",
+      "description": "iPhone and iPad first. Keyboard-aware editor, three-column iPad workspace, Shortcuts, Widgets and Handoff."
+    },
+    "macos": {
+      "name": "macOS",
+      "tag": "AppKit-native",
+      "description": "A true Mac app that shares the same model, storage and sync-safety core — no Catalyst shortcuts, no compromise."
+    },
+    "harmony": {
+      "name": "HarmonyOS NEXT",
+      "tag": "100% ArkTS / ArkUI",
+      "description": "A fully native HarmonyOS NEXT edition on the Stage model — same no-data-loss guarantees, no cross-platform runtime."
+    }
+  },
+  "features": {
+    "conservation": {
+      "label": "Conservation of writing",
+      "title": "Your words",
+      "titleHighlight": "survive everything.",
+      "description": "Every keystroke autosaves locally. Every meaningful edit snapshots a version you can roll back to. Deleted articles rest in Trash for 30 days. When the system is uncertain, it preserves more text — never less."
+    },
+    "markdown": {
+      "label": "Markdown mode",
+      "title": "Markdown that reads",
+      "titleHighlight": "like prose.",
+      "description": "Type bold, italic, or code and the markers fade from lines you've left, so the page reads like it's published. Move the caret back and they return, ready to edit. Headings, quotes, lists, tables and code all render inline."
+    },
+    "history": {
+      "label": "Version history",
+      "title": "Roll back to any",
+      "titleHighlight": "earlier draft.",
+      "description": "Visible version history captures previous states before every meaningful change. Restore an older draft and the version you replaced is kept as a newer recovery snapshot — recovery is a path, not a gamble."
+    },
+    "sync": {
+      "label": "Conflict-safe sync",
+      "title": "Two histories?",
+      "titleHighlight": "Keep both.",
+      "description": "NeoWriter runs no backend. Sync goes through your own iCloud or any WebDAV server you trust. When two devices diverge, the incoming version is saved as a conflict copy — your text is never silently overwritten."
+    },
+    "platforms": {
+      "label": "Truly cross-platform",
+      "title": "Write here,",
+      "titleHighlight": "continue there.",
+      "description": "iPhone, iPad, Mac and HarmonyOS NEXT — each a native app, each carrying the same conservation guarantees. Start a draft on the train, finish it at your desk, keep it safe the whole way."
+    }
+  },
+  "grid": {
+    "title": "Everything a serious writer needs.",
+    "subtitle": "Quiet by default — powerful when you reach for it.",
+    "items": {
+      "autosave": { "title": "Autosave", "description": "Every keystroke, saved locally" },
+      "trash": { "title": "30-day Trash", "description": "Deletion is recoverable" },
+      "backup": { "title": "Local Backups", "description": "Validated restore, no cloud needed" },
+      "find": { "title": "Find & Replace", "description": "Fast in-document search" },
+      "outline": { "title": "Outline", "description": "Navigate long documents" },
+      "statistics": { "title": "Statistics", "description": "Words, characters, reading time" },
+      "sprint": { "title": "Sprint Timer", "description": "Focused writing sessions" },
+      "goal": { "title": "Daily Goal", "description": "Build a writing habit" },
+      "export": { "title": "Export", "description": "TXT, Markdown, PDF & more" },
+      "privacyLock": { "title": "Privacy Lock", "description": "Face ID & safe mode" },
+      "shortcuts": { "title": "Keyboard Shortcuts", "description": "Cmd+B / Cmd+I / Cmd+K" },
+      "typewriter": { "title": "Typewriter Mode", "description": "Keep the caret in view" }
+    }
+  },
+  "privacy": {
+    "title": "No accounts. No servers.",
+    "titleHighlight": "No tracking.",
+    "subtitle": "NeoWriter runs no backend. Your writing lives on your device — and only travels through the cloud you choose.",
+    "local": {
+      "title": "Local-first by design",
+      "description": "Your library lives on your device. Editing, autosave, history and Trash never depend on a network or an account."
+    },
+    "yourCloud": {
+      "title": "Your cloud, your rules",
+      "description": "Sync through your own iCloud or any WebDAV server — Nutstore, Nextcloud, ownCloud, your own box. Your text never sits in a database it doesn't have to."
+    },
+    "noTracking": {
+      "title": "Zero tracking",
+      "description": "No analytics, no ads, no third-party SDKs. NeoWriter does not collect personal data. Period."
+    },
+    "conflict": {
+      "title": "No silent overwrite",
+      "description": "When sync sees two valid histories, both survive as a conflict copy. The app preserves competing edits instead of choosing for you."
+    }
+  },
+  "pricing": {
+    "title": "Fair pricing. Safety is never behind a paywall.",
+    "subtitle": "Autosave, history, Trash, backups and conflict protection are always free.",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "period": "Forever free",
+      "features": [
+        "Local plain-text & Markdown writing",
+        "Autosave & version history",
+        "30-day Trash & restore",
+        "Manual local backup & validated restore",
+        "Conflict-safe protection",
+        "Plain-text export & share",
+        "Privacy lock & safe mode"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "badge": "BEST VALUE",
+      "price": "$24.99",
+      "period": "lifetime",
+      "altPricing": "Or $1.99/mo · $14.99/yr",
+      "features": [
+        "Everything in Free",
+        "Cross-device sync (iCloud & WebDAV)",
+        "Word & rich export presets",
+        "Note links & backlinks",
+        "Nested tags & smart folders",
+        "Themes & typography presets",
+        "Future power features & Mac depth"
+      ]
+    }
+  },
+  "footerCTA": {
+    "title": "Start writing today.",
+    "subtitle": "Free to use. No account needed. Your words stay yours."
+  },
+  "footer": {
+    "tagline": "Calm writing, conserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "support": "Support",
+    "copyright": "© 2026 NeoWriter. All rights reserved."
+  }
+}

@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* NeoWriter design tokens — derived from stitch_neowriter_design_system/neowriter/DESIGN.md
+   Aesthetic: layered near-black canvas, single electric-violet accent, 1px hairline structure,
+   focused serif writing canvas (Raycast-inspired). */
+:root {
+  --bg: #0d0e15;
+  --surface: #12131a;
+  --surface-low: #1a1b22;
+  --surface-container: #1e1f26;
+  --surface-high: #292931;
+  --on-surface: #e3e1ec;
+  --on-surface-variant: #cbc3d7;
+  --outline: #958ea0;
+  --outline-variant: #494454;
+  --accent: #d0bcff;
+  --accent-strong: #a078ff;
+  --accent-deep: #6d3bd7;
+  --recovery: #e6b34d;
+  --conflict: #b39ddb;
+  --hairline: rgba(227, 225, 236, 0.08);
+}
+
+@theme inline {
+  --color-bg: #0d0e15;
+  --color-surface: #12131a;
+  --color-surface-low: #1a1b22;
+  --color-surface-container: #1e1f26;
+  --color-surface-high: #292931;
+  --color-on-surface: #e3e1ec;
+  --color-on-surface-variant: #cbc3d7;
+  --color-outline: #958ea0;
+  --color-accent: #d0bcff;
+  --color-accent-strong: #a078ff;
+  --color-accent-deep: #6d3bd7;
+  --color-recovery: #e6b34d;
+  --color-conflict: #b39ddb;
+
+  --font-sans: var(--font-geist), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: var(--font-serif-canvas), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono-label), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* {
+  border-color: var(--hairline);
+}
+
+body {
+  background: var(--bg);
+  color: var(--on-surface);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+::selection {
+  background: rgba(208, 188, 255, 0.28);
+  color: #fff;
+}
+
+.font-serif-canvas {
+  font-family: var(--font-serif);
+}
+
+/* Subtle grid — quiet geometry from the brand foundation */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(227, 225, 236, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 225, 236, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
