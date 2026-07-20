@@ -94,5 +94,6 @@ export const PLATFORMS: { key: PlatformKey; iconName: string }[] = [
 export const APP_STORE_URL = "https://apps.apple.com/app/neowriter";
 export const APP_GALLERY_URL = "https://appgallery.huawei.com/app/neowriter";
 export const SUPPORT_EMAIL = "neowriter@outlook.com";
-export const PRIVACY_URL = "https://petrguan.github.io/NeoWriter-privacy-policy/";
-export const TERMS_URL = "https://petrguan.github.io/NeoWriter-privacy-policy/terms-of-service";
+// Matches the links used inside the NeoWriter app (PaywallViewController.swift).
+export const PRIVACY_URL = "https://petrguan.github.io/neowriter-legal/";
+export const TERMS_URL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
