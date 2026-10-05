@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf8f2"/>
+  <rect x="45" y="45" width="1110" height="540" rx="3" fill="none" stroke="#dcded8"/>
+  <text x="85" y="110" font-family="Georgia,serif" font-size="30" fill="#25323a">NeoWriter.</text>
+  <text x="85" y="260" font-family="Georgia,serif" font-size="84" fill="#25323a">A little room</text>
+  <text x="85" y="360" font-family="Georgia,serif" font-size="84" fill="#25323a">for your <tspan font-style="italic" fill="#174c65">words.</tspan></text>
+  <path d="M85 421H700" stroke="#dcded8"/>
+  <text x="85" y="474" font-family="sans-serif" font-size="22" fill="#626e72">A calm Markdown workspace for iPhone and iPad.</text>
+  <text x="85" y="544" font-family="monospace" font-size="13" letter-spacing="2" fill="#174c65">MADE FOR WORDS WORTH KEEPING.</text>
+</svg>
