@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import InformationPage, { type InformationSection } from "@/components/InformationPage";
-import { APP_STORE_URL, SUPPORT_EMAIL } from "@/lib/constants";
+import { APP_STORE_URL, SITE_URL, SUPPORT_EMAIL, sitePath } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Support & Contact — NeoWriter",
   description: "Contact NeoWriter support for writing, sync, recovery, purchases, or privacy requests on iPhone and iPad.",
-  alternates: { canonical: "/support/" },
-  openGraph: { title: "Support & Contact — NeoWriter", url: "/support/" },
+  alternates: { canonical: `${SITE_URL}/support/` },
+  openGraph: { title: "Support & Contact — NeoWriter", url: `${SITE_URL}/support/` },
 };
 
 const sections: InformationSection[] = [
@@ -72,7 +72,7 @@ const sections: InformationSection[] = [
     content: <>
       <p>For a privacy question or a request concerning support information we hold, email <a href={`mailto:${SUPPORT_EMAIL}?subject=NeoWriter%20privacy%20request`}>{SUPPORT_EMAIL}</a> with the subject “NeoWriter privacy request.” Tell us whether you seek access, correction, or deletion, and which previous support conversation is involved.</p>
       <p>Do not include secrets or the full contents of your writing. We may need limited verification to protect your information, and will explain relevant legal or technical limits.</p>
-      <p>Use <a href="/privacy/#retention-deletion">the Privacy Policy&apos;s retention and deletion instructions</a> to distinguish local documents, Trash, history, device backups, cloud objects, keys, exports, and past AI requests. There is no single app action that guarantees erasure of every historical or remote copy. We cannot directly delete data held solely by your selected provider or server.</p>
+      <p>Use <a href={sitePath("/privacy/#retention-deletion")}>the Privacy Policy&apos;s retention and deletion instructions</a> to distinguish local documents, Trash, history, device backups, cloud objects, keys, exports, and past AI requests. There is no single app action that guarantees erasure of every historical or remote copy. We cannot directly delete data held solely by your selected provider or server.</p>
       <p>For copies held by Apple, a cloud service, a server operator, or an AI provider, use that recipient&apos;s account and privacy controls as well. If unsure which recipient applies, contact us without including private content.</p>
     </>,
   },
@@ -81,7 +81,7 @@ const sections: InformationSection[] = [
     title: "7. Product and legal information",
     content: <>
       <p>This site describes the current iPhone and iPad workspace. {APP_STORE_URL ? <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">View NeoWriter on the App Store.</a> : "The app is being prepared for release; the site will link to its verified App Store listing when available."} The Mac workspace and other future features are not advertised as available in this release.</p>
-      <p>The <a href="/privacy/">Privacy Policy</a> covers current workspace storage, optional encrypted sync, external AI, permissions, purchases, website visits, and support. The <a href="/terms/">Terms of Use</a> link to Apple&apos;s Standard EULA and describe Free and Pro, purchase handling, and your content rights.</p>
+      <p>The <a href={sitePath("/privacy/")}>Privacy Policy</a> covers current workspace storage, optional encrypted sync, external AI, permissions, purchases, website visits, and support. The <a href={sitePath("/terms/")}>Terms of Use</a> link to Apple&apos;s Standard EULA and describe Free and Pro, purchase handling, and your content rights.</p>
       <p>For product or review questions, use the support email above. This website does not provide a demo account, handle StoreKit purchases, or replace the app&apos;s consent prompts.</p>
     </>,
   },

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import InformationPage, { type InformationSection } from "@/components/InformationPage";
-import { SUPPORT_EMAIL } from "@/lib/constants";
+import { SITE_URL, SUPPORT_EMAIL, sitePath } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — NeoWriter",
   description: "How NeoWriter handles local writing, encrypted cloud sync, optional AI, purchases, website visits, and privacy requests.",
-  alternates: { canonical: "/privacy/" },
-  openGraph: { title: "Privacy Policy — NeoWriter", url: "/privacy/" },
+  alternates: { canonical: `${SITE_URL}/privacy/` },
+  openGraph: { title: "Privacy Policy — NeoWriter", url: `${SITE_URL}/privacy/` },
 };
 
 const sections: InformationSection[] = [
@@ -79,7 +79,7 @@ const sections: InformationSection[] = [
     title: "8. Purchases",
     content: <>
       <p>Apple processes in-app purchases through StoreKit. NeoWriter uses transaction and entitlement information to enable and restore purchased features, and can keep entitlement state locally for offline use. NeoWriter does not receive payment-card details through StoreKit.</p>
-      <p>Billing, refund requests, subscription management, and Apple&apos;s handling of purchase information are governed by Apple&apos;s terms and privacy practices. See our <a href="/terms/#purchases">purchase terms</a> and <a href="/support/#purchases">purchase support</a>.</p>
+      <p>Billing, refund requests, subscription management, and Apple&apos;s handling of purchase information are governed by Apple&apos;s terms and privacy practices. See our <a href={sitePath("/terms/#purchases")}>purchase terms</a> and <a href={sitePath("/support/#purchases")}>purchase support</a>.</p>
     </>,
   },
   {
@@ -139,7 +139,7 @@ const sections: InformationSection[] = [
     title: "14. Changes and contact",
     content: <>
       <p>Policy revisions will be published at this address with an updated date. Please review it when deciding whether to use optional transfers. Where applicable law requires additional notice or permission for a change, those requirements continue to apply.</p>
-      <p>Privacy and support contact: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. The <a href="/support/">Support page</a> explains what to include in a request and how to avoid exposing sensitive information.</p>
+      <p>Privacy and support contact: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. The <a href={sitePath("/support/")}>Support page</a> explains what to include in a request and how to avoid exposing sensitive information.</p>
     </>,
   },
 ];

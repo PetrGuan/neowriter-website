@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
+import { PRIVACY_URL, TERMS_URL, sitePath } from "@/lib/constants";
 
 export type InformationSection = {
   id: string;
@@ -43,9 +44,9 @@ export default function InformationPage({
               ))}
             </nav>
             <div className="information-related">
-              <a href="/privacy/">Privacy policy</a>
-              <a href="/terms/">Terms of use</a>
-              <a href="/support/">Support & contact</a>
+              <a href={PRIVACY_URL}>Privacy policy</a>
+              <a href={TERMS_URL}>Terms of use</a>
+              <a href={sitePath("/support/")}>Support & contact</a>
             </div>
           </aside>
           <div className="information-content">

@@ -1,5 +1,1 @@
-import { redirect } from "next/navigation";
-
-export default function LegacyChinesePage() {
-  redirect("/");
-}
+export { default } from "../en/page";

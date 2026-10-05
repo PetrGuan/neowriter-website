@@ -4,11 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import LaunchLink from "./LaunchLink";
+import { sitePath } from "@/lib/constants";
 
 const links = [
-  { href: "/#workspace", label: "The workspace" },
-  { href: "/#your-cloud", label: "Your cloud" },
-  { href: "/support/", label: "Support" },
+  { href: sitePath("/#workspace"), label: "The workspace" },
+  { href: sitePath("/#your-cloud"), label: "Your cloud" },
+  { href: sitePath("/support/"), label: "Support" },
 ];
 
 export default function SiteHeader() {
@@ -17,8 +18,8 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="shell header-inner">
-        <a className="wordmark" href="/" aria-label="NeoWriter home">
-          <Image src="/images/app-icon.png" width={36} height={36} alt="" />
+        <a className="wordmark" href={sitePath("/")} aria-label="NeoWriter home">
+          <Image src={sitePath("/images/app-icon.png")} width={36} height={36} alt="" />
           <span>NeoWriter<span className="wordmark-period">.</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">

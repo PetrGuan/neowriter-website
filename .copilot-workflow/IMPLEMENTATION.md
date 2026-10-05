@@ -50,3 +50,19 @@ The app still links the old external policy URL; after deployment its owner must
 update it or arrange an appropriate redirect. The app repository was read only.
 No app source, purchases, external accounts, App Store Connect settings, commits,
 pushes, or deployments were changed.
+
+## Follow-up: GitHub Pages publication
+
+The owner subsequently requested commit/push and then explicitly authorized the
+automatic Pages deployment proposed for this public repository.
+
+- Enabled GitHub Pages with workflow publishing and HTTPS.
+- Added a build-only Ubuntu Actions workflow for pushes to main and manual dispatch.
+- Added build-time public URL/base-path configuration for images, navigation,
+  metadata, sitemap, robots, and static language redirects.
+- README now lists the actual github.io review URLs and deployment instructions.
+- The prior no-commit/no-deployment statement describes only the initial local
+  implementation, not these owner-authorized follow-ups.
+
+The public app/legal operator and mailbox checks remain owner responsibilities.
+No application source or App Store Connect metadata is changed by deployment.

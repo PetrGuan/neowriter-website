@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { APP_STORE_URL } from "@/lib/constants";
+import { APP_STORE_URL, sitePath } from "@/lib/constants";
 
 export default function LaunchLink({
   className = "button button-primary",
@@ -9,7 +9,7 @@ export default function LaunchLink({
   return (
     <a
       className={className}
-      href={APP_STORE_URL ?? "/#availability"}
+      href={APP_STORE_URL ?? sitePath("/#availability")}
       {...(APP_STORE_URL
         ? { target: "_blank", rel: "noopener noreferrer" }
         : {})}

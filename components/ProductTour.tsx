@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
+import { sitePath } from "@/lib/constants";
 
 const views = [
   {
@@ -127,7 +128,7 @@ export default function ProductTour() {
                   <span className="margin-note" aria-hidden="true">{view.marginNote}</span>
                   <div className="phone-frame tour-phone">
                     <Image
-                      src={`/images/${view.image}.webp`}
+                      src={sitePath(`/images/${view.image}.webp`)}
                       alt={view.alt}
                       width={800}
                       height={1738}

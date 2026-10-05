@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import InformationPage, { type InformationSection } from "@/components/InformationPage";
-import { APPLE_EULA_URL, SUPPORT_EMAIL } from "@/lib/constants";
+import { APPLE_EULA_URL, SITE_URL, SUPPORT_EMAIL, sitePath } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Terms of Use — NeoWriter",
   description: "NeoWriter's terms for writing ownership, optional cloud and AI services, Free and Pro, Apple purchases, and support.",
-  alternates: { canonical: "/terms/" },
-  openGraph: { title: "Terms of Use — NeoWriter", url: "/terms/" },
+  alternates: { canonical: `${SITE_URL}/terms/` },
+  openGraph: { title: "Terms of Use — NeoWriter", url: `${SITE_URL}/terms/` },
 };
 
 const sections: InformationSection[] = [
@@ -24,7 +24,7 @@ const sections: InformationSection[] = [
     title: "2. Your writing belongs to you",
     content: <>
       <p>You retain your rights in the writing, images, and other material you create or import. Using NeoWriter does not transfer ownership of that material to us.</p>
-      <p>You are responsible for having the rights needed to import, copy, export, or send material to an external recipient. When you choose sync, sharing, or AI, you authorize the processing necessary for that action, subject to the <a href="/privacy/">Privacy Policy</a> and the recipient&apos;s applicable terms. This is not a license for NeoWriter to publish your private writing.</p>
+      <p>You are responsible for having the rights needed to import, copy, export, or send material to an external recipient. When you choose sync, sharing, or AI, you authorize the processing necessary for that action, subject to the <a href={sitePath("/privacy/")}>Privacy Policy</a> and the recipient&apos;s applicable terms. This is not a license for NeoWriter to publish your private writing.</p>
       <p>The NeoWriter app, brand, and site remain subject to their respective intellectual-property rights. Bundled open-source components and fonts have their own licenses.</p>
     </>,
   },
@@ -57,7 +57,7 @@ const sections: InformationSection[] = [
     title: "5. Local storage and optional sync",
     content: <>
       <p>You can write locally without enabling sync. If you enable it, you choose and authorize a destination. You are responsible for that account&apos;s access, storage capacity, and provider terms. An internet connection and an operational compatible destination are needed for transfers.</p>
-      <p>NeoWriter encrypts writing-history and asset content before sync transport. This is not encryption of the local workspace files, exported files, or separate AI requests, and it does not hide all provider-visible metadata. See the <a href="/privacy/#cloud-sync">Privacy Policy</a> for the boundaries.</p>
+      <p>NeoWriter encrypts writing-history and asset content before sync transport. This is not encryption of the local workspace files, exported files, or separate AI requests, and it does not hide all provider-visible metadata. See the <a href={sitePath("/privacy/#cloud-sync")}>Privacy Policy</a> for the boundaries.</p>
       <p>Store your recovery key safely outside the device. Replacing a recovery key does not invalidate earlier keys. A lost key, deleted cloud data, provider outage, storage failure, or another device&apos;s changes can affect access and recovery. Support cannot guarantee reconstruction of content or decryption without the required keys.</p>
     </>,
   },
@@ -76,7 +76,7 @@ const sections: InformationSection[] = [
     content: <>
       <p>Autosave, history, and recovery tools help preserve writing; they are not an absolute guarantee against data loss. History maintenance can reduce intermediate versions and remove unused assets. An older version may not include every historical image.</p>
       <p>Keep independent exports of important work. Review exported contents and recipients before sharing. Deletion, Trash, historical copies, other devices, cloud destinations, Keychain, and device backups have different retention rules. Removing a document or deleting the app does not prove every copy has been erased.</p>
-      <p>Read <a href="/privacy/#retention-deletion">retention and deletion controls</a> and <a href="/support/#privacy-requests">privacy request instructions</a> before a destructive action. Stopping a service does not retract information already sent to another party.</p>
+      <p>Read <a href={sitePath("/privacy/#retention-deletion")}>retention and deletion controls</a> and <a href={sitePath("/support/#privacy-requests")}>privacy request instructions</a> before a destructive action. Stopping a service does not retract information already sent to another party.</p>
     </>,
   },
   {
@@ -100,7 +100,7 @@ const sections: InformationSection[] = [
     id: "contact",
     title: "10. Contact",
     content: <>
-      <p>Questions about these terms, purchases, or the app: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. See <a href="/support/">Support</a> for useful troubleshooting information and <a href="/privacy/">Privacy</a> for data-handling and request details.</p>
+      <p>Questions about these terms, purchases, or the app: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. See <a href={sitePath("/support/")}>Support</a> for useful troubleshooting information and <a href={sitePath("/privacy/")}>Privacy</a> for data-handling and request details.</p>
     </>,
   },
 ];

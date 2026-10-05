@@ -61,7 +61,7 @@ Fonts originate from `NeoWriter/Resources/Fonts/` and retain their OFL licenses.
 `APP_STORE_URL` in `lib/constants.ts` intentionally remains `null` until a verified
 listing is available. Navigation then displays **Coming soon**, not a placeholder
 download link. Set the real URL to activate the download CTAs across the page.
-Before publishing, verify `SITE_URL`, support-mailbox ownership, the public operator
+Before App Store submission, verify support-mailbox ownership, the public operator
 identity, actual hosting practices, support correspondence retention, and the
 policy against the signed release build. The user was unavailable to confirm
 these operational details; no company name, jurisdiction, or fixed retention
@@ -70,25 +70,53 @@ App Store developer listing and uses the existing support address.
 
 ## App Store review URLs
 
-With the configured domain, deploy `out/` before entering these in App Store Connect:
+The public GitHub Pages deployment uses these URLs:
 
 | Field | URL |
 | --- | --- |
-| Marketing URL | `https://neowriter.app/` |
-| Support URL | `https://neowriter.app/support/` |
-| Privacy Policy URL | `https://neowriter.app/privacy/` |
-| Product Terms | `https://neowriter.app/terms/` |
+| Marketing URL | `https://petrguan.github.io/neowriter-website/` |
+| Support URL | `https://petrguan.github.io/neowriter-website/support/` |
+| Privacy Policy URL | `https://petrguan.github.io/neowriter-website/privacy/` |
+| Product Terms | `https://petrguan.github.io/neowriter-website/terms/` |
 
 The application license remains Apple's Standard EULA, linked from `/terms/`.
 Do not select a custom App Store EULA merely because this product terms page exists.
 
 The local app currently links to `https://petrguan.github.io/neowriter-legal/`.
 Its owner must update the in-app policy URL or make the older URL lead to the
-current policy after deployment. This task does not modify the app repository,
-publish a policy, submit App Privacy labels, or certify App Store acceptance.
+current policy. Website deployment does not modify the app repository,
+submit App Privacy labels, or certify App Store acceptance.
 Reconcile website disclosures, the signed build, consent prompts, and App Privacy
 answers before submission. Remote erasure is not verified as a one-click app flow;
 the policy explicitly explains this limitation instead of promising it.
+
+## Automatic deployment
+
+The owner authorized GitHub Pages Actions for this public repository. The workflow
+in `.github/workflows/deploy-pages.yml` builds and deploys on pushes to `main`;
+it also supports manual dispatch. It uses standard Ubuntu runners and does not
+execute tests. Pages' `github-pages` environment permits deployment from `main`.
+
+The build reads the origin and base path from `actions/configure-pages`:
+
+- `NEXT_PUBLIC_SITE_URL`: the complete Pages URL, including a project path.
+- `NEXT_PUBLIC_BASE_PATH`: `/neowriter-website` for the current project site.
+
+`sitePath()` prefixes internal links and public images. Next.js prefixes its own
+bundled assets, while metadata, sitemap, and robots use the full public URL.
+No paid domain is needed. If a custom domain is configured later, the workflow
+uses its Pages configuration on the next build instead of assuming a project path.
+
+To reproduce the Pages build locally:
+
+```sh
+NEXT_PUBLIC_BASE_PATH=/neowriter-website \
+NEXT_PUBLIC_SITE_URL=https://petrguan.github.io/neowriter-website \
+npm run build
+```
+
+Deploy the contents of `out/`, not the project source. Legacy language aliases use
+a static meta redirect and a fallback link, so they also work without JavaScript.
 
 ## License
 

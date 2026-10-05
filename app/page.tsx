@@ -7,7 +7,7 @@ import SiteHeader from "@/components/SiteHeader";
 import ProductTour from "@/components/ProductTour";
 import LaunchLink from "@/components/LaunchLink";
 import SiteFooter from "@/components/SiteFooter";
-import { APP_STORE_URL, SUPPORT_EMAIL } from "@/lib/constants";
+import { APP_STORE_URL, SUPPORT_EMAIL, sitePath } from "@/lib/constants";
 
 const freeFeatures = [
   "Unlimited local writing",
@@ -80,7 +80,7 @@ export default function HomePage() {
               <div className="hero-paper" aria-hidden="true"><span className="hero-paper-label">SPACE TO WRITE / NEOWRITER</span></div>
               <div className="phone-frame hero-phone">
                 <Image
-                  src="/images/editor.webp"
+                  src={sitePath("/images/editor.webp")}
                   alt="NeoWriter on iPhone: a quiet paper editor with the draft Morning, Low Tide saved on this device"
                   width={800}
                   height={1738}
@@ -115,7 +115,7 @@ export default function HomePage() {
             <div className="workspace-figure">
               <div className="workspace-screen">
                 <Image
-                  src="/images/ipad-workspace.webp"
+                  src={sitePath("/images/ipad-workspace.webp")}
                   alt="NeoWriter's real iPad workspace showing the Library, The Salt Year project, and the active Markdown document side by side"
                   width={1400}
                   height={1867}
@@ -198,7 +198,7 @@ export default function HomePage() {
 
         <section className="closing" id="availability" aria-labelledby="closing-title">
           <div className="shell">
-            <Image src="/images/app-icon.png" alt="" width={64} height={64} />
+            <Image src={sitePath("/images/app-icon.png")} alt="" width={64} height={64} />
             <h2 id="closing-title">The next page<br />is <em>yours.</em></h2>
             <p>{APP_STORE_URL ? "Make a little room for your writing. Start with NeoWriter's free essentials on iPhone and iPad." : "A new chapter for NeoWriter. Coming soon to iPhone and iPad. A calmer place for everything you want to write."}</p>
             {APP_STORE_URL ? <LaunchLink /> : <a className="button button-primary" href={`mailto:${SUPPORT_EMAIL}?subject=NeoWriter%20launch%20inquiry`}>Get in touch<ArrowUpRight size={16} aria-hidden="true" /></a>}

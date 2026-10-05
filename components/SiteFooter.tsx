@@ -1,14 +1,14 @@
-import { PRIVACY_URL, SUPPORT_EMAIL, TERMS_URL } from "@/lib/constants";
+import { PRIVACY_URL, SUPPORT_EMAIL, TERMS_URL, sitePath } from "@/lib/constants";
 
 export default function SiteFooter() {
   return (
     <footer className="site-footer shell">
       <div className="footer-main">
-        <a className="wordmark" href="/" aria-label="NeoWriter home">
+        <a className="wordmark" href={sitePath("/")} aria-label="NeoWriter home">
           <span>NeoWriter<span className="wordmark-period">.</span></span>
         </a>
         <nav className="footer-links" aria-label="Footer">
-          <a href="/support/">Support</a>
+          <a href={sitePath("/support/")}>Support</a>
           <a href={PRIVACY_URL}>Privacy policy</a>
           <a href={TERMS_URL}>Terms of use</a>
           <a href={`mailto:${SUPPORT_EMAIL}`}>Contact</a>
