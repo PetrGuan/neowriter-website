@@ -32,7 +32,7 @@ const telemetry = localFont({
 
 const title = "NeoWriter — A little room for your words.";
 const description =
-  "A calm Markdown writing app for iPhone and iPad. Make room for notes, journals, and longer drafts with projects, writing history, and optional encrypted cloud sync.";
+  "A calm Markdown writing app for iPhone, iPad, and Mac. Make room for notes, journals, and longer drafts with projects, writing history, and optional encrypted cloud sync.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

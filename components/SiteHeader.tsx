@@ -8,6 +8,7 @@ import { sitePath } from "@/lib/constants";
 
 const links = [
   { href: sitePath("/#workspace"), label: "The workspace" },
+  { href: sitePath("/#mac"), label: "On Mac" },
   { href: sitePath("/#your-cloud"), label: "Your cloud" },
   { href: sitePath("/support/"), label: "Support" },
 ];

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {
   ArrowDown, ArrowUpRight, Check, Cloud, FileText, FolderOpen,
-  HardDrive, KeyRound, LockKeyhole, Plus, ShieldCheck, Smartphone, Sparkles,
+  HardDrive, KeyRound, Laptop, LockKeyhole, Plus, ShieldCheck, Smartphone, Sparkles,
 } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import ProductTour from "@/components/ProductTour";
@@ -30,7 +30,7 @@ const proFeatures = [
 const questions = [
   {
     question: "Which devices is NeoWriter for?",
-    answer: "This version of NeoWriter is built for iPhone and iPad. The native Mac workspace is still in development; it is not part of this release.",
+    answer: "iPhone, iPad, and Mac. Each is a native app built for its device, and Pro is one purchase across all three. On Mac, the interface is currently in English.",
   },
   {
     question: "Can I write without an internet connection?",
@@ -38,7 +38,7 @@ const questions = [
   },
   {
     question: "Are my documents ordinary files?",
-    answer: "Yes. Your writing is stored as Markdown files inside NeoWriter's private workspace, with images stored alongside it. On iPhone and iPad, take your writing out through Export or Share; this version does not edit folders directly in the Files app.",
+    answer: "Yes. Your writing is stored as Markdown files inside NeoWriter's private workspace, with images stored alongside it. Take your writing out through Export or Share; this version does not edit folders directly in the Files app or Finder.",
   },
   {
     question: "What is encrypted, and what is not?",
@@ -46,11 +46,11 @@ const questions = [
   },
   {
     question: "Do I have to use AI?",
-    answer: "No. AI assistance is optional and requires Pro. External AI sends the disclosed text and prompt directly to the provider you configure, using your own API key. It is a separate data flow from encrypted sync. On-device assistance depends on Apple Intelligence availability and device support.",
+    answer: "No. AI assistance is optional and requires Pro. Suggested edits are shown as changes you accept or reject one by one, and nothing is applied until you accept it. External AI sends the disclosed text and prompt directly to the provider you configure, using your own API key. It is a separate data flow from encrypted sync. On-device assistance depends on Apple Intelligence availability and device support.",
   },
   {
     question: "How much does Pro cost?",
-    answer: "Pro offers monthly, yearly, and lifetime purchase options in the app. Confirm the current price, regional availability, and included features in the app before purchasing. We do not list unverified storefront prices here.",
+    answer: "Pro offers monthly, yearly, and lifetime purchase options in the app, and one purchase covers iPhone, iPad, and Mac. Every Apple Account can try Pro free for 14 days: no payment, and no automatic renewal. Confirm the current price, regional availability, and included features in the app before purchasing. We do not list unverified storefront prices here.",
   },
 ];
 
@@ -68,13 +68,13 @@ export default function HomePage() {
               <p className="hero-description">
                 For the passing thought. The daily page. The draft that
                 becomes something more. A calm Markdown workspace,
-                made for iPhone and iPad.
+                made for iPhone, iPad, and Mac.
               </p>
               <div className="hero-ctas">
                 <LaunchLink />
                 <a className="text-link" href="#workspace">Meet your workspace<ArrowDown size={15} aria-hidden="true" /></a>
               </div>
-              <p className="hero-platforms"><Smartphone size={13} aria-hidden="true" />iPhone & iPad<span aria-hidden="true">·</span>Start with the free essentials</p>
+              <p className="hero-platforms"><Smartphone size={13} aria-hidden="true" />iPhone & iPad<span aria-hidden="true">·</span><Laptop size={13} aria-hidden="true" />Mac<span aria-hidden="true">·</span>Start with the free essentials</p>
             </div>
             <figure className="hero-visual reveal reveal-delay">
               <div className="hero-paper" aria-hidden="true"><span className="hero-paper-label">SPACE TO WRITE / NEOWRITER</span></div>
@@ -128,7 +128,33 @@ export default function HomePage() {
           <div className="workspace-footnotes">
             <div><p className="eyebrow">A home for each idea</p><h3>Projects, not piles.</h3><p>Keep related documents together. A new novel need not live in the same place as yesterday&apos;s shopping list.</p></div>
             <div><p className="eyebrow">Space for the words</p><h3>Markdown, naturally.</h3><p>Headings, emphasis, lists, and images. Write with familiar Markdown, then step into a reading preview.</p></div>
-            <div><p className="eyebrow">Yours beyond the app</p><h3>Take the writing with you.</h3><p>Export plain text or Markdown. When a Markdown export includes images, they travel alongside it in a ZIP.</p></div>
+            <div><p className="eyebrow">Yours beyond the app</p><h3>Take the writing with you.</h3><p>Export plain text or Markdown. When a Markdown export includes images, they travel alongside it in a ZIP. On Mac, export to PDF or print.</p></div>
+          </div>
+        </section>
+
+        <section className="mac-section section-space shell" id="mac" aria-labelledby="mac-title">
+          <div className="workspace-heading">
+            <div><p className="eyebrow">02 / At your desk</p><h2 id="mac-title">The same quiet page.<br />Now on your Mac.</h2></div>
+            <p>A native Mac app with a sidebar for your projects, room for the documents in each, and the page you are writing beside them. Your writing saves on this Mac as you go.</p>
+          </div>
+          <figure>
+            <div className="workspace-figure mac-figure">
+              <div className="mac-screen">
+                <Image
+                  src={sitePath("/images/mac-workspace.webp")}
+                  alt="NeoWriter's real Mac window showing projects in the sidebar, the documents in The Salt Year, and the essay Morning, Low Tide open in the editor"
+                  width={1440}
+                  height={984}
+                  sizes="(max-width: 760px) 90vw, 1020px"
+                />
+              </div>
+            </div>
+            <figcaption className="figure-caption"><span>The workspace / Mac</span><span>Actual app capture. Sample writing is fictional.</span></figcaption>
+          </figure>
+          <div className="workspace-footnotes">
+            <div><p className="eyebrow">When a thought arrives</p><h3>Quick Capture.</h3><p>Catch an idea from the menu bar without leaving what you are doing. New NeoWriter Note in the Services menu saves text you select in other apps.</p></div>
+            <div><p className="eyebrow">Stay on the keys</p><h3>Made for the keyboard.</h3><p>A command palette, Library search, an outline, and Reading and Focus views keep your hands on the keys and your eyes on the page.</p></div>
+            <div><p className="eyebrow">One purchase</p><h3>Pro, wherever you write.</h3><p>Pro bought on iPhone or iPad is the same Pro on Mac, and the other way round. Sync keeps your projects together across your devices.</p></div>
           </div>
         </section>
 
@@ -137,7 +163,7 @@ export default function HomePage() {
         <section className="cloud-section section-space" id="your-cloud" aria-labelledby="cloud-title">
           <div className="shell cloud-grid">
             <div className="cloud-copy">
-              <p className="eyebrow">02 / Your cloud. Your keys.</p>
+              <p className="eyebrow">03 / Your cloud. Your keys.</p>
               <h2 id="cloud-title">Carry the words.<br /><em>Keep the control.</em></h2>
               <p>Start on this device. When you want your writing on another, choose your own cloud account or server. NeoWriter encrypts writing history and assets before they leave for sync.</p>
               <div className="cloud-footnote"><KeyRound size={16} aria-hidden="true" /><span>Keep your account recovery key somewhere safe, outside this device. It helps you recover your encrypted writing on another device.</span></div>
@@ -160,14 +186,14 @@ export default function HomePage() {
         <section className="ai-section section-space shell" aria-labelledby="ai-title">
           <div className="ai-grid">
             <div className="ai-symbol"><Sparkles size={26} strokeWidth={1.3} aria-hidden="true" /></div>
-            <div className="ai-heading"><p className="eyebrow">03 / Assistance, by invitation</p><h2 id="ai-title">A second perspective.<br />Still your voice.</h2></div>
-            <div className="ai-copy"><p>When you want a hand, optional AI tools can help you rewrite, summarize, or continue a draft. Choose on-device assistance where Apple Intelligence is supported, or connect a supported provider with your own API key.</p><p className="ai-disclosure">A Pro feature, not a requirement for writing. External AI receives the disclosed text and prompt in readable form. It is separate from encrypted sync.</p></div>
+            <div className="ai-heading"><p className="eyebrow">04 / Assistance, by invitation</p><h2 id="ai-title">A second perspective.<br />Still your voice.</h2></div>
+            <div className="ai-copy"><p>When you want a hand, optional AI tools can help you rewrite, summarize, or continue a draft, or leave margin notes the way a first reader would. Suggested edits arrive as changes you accept or reject one by one, and each accepted change is kept as its own version in your writing history. Choose on-device assistance where Apple Intelligence is supported, or connect a supported provider with your own API key.</p><p className="ai-disclosure">A Pro feature, not a requirement for writing. External AI receives the disclosed text and prompt in readable form. It is separate from encrypted sync.</p></div>
           </div>
         </section>
 
         <section className="section-space shell" id="free-and-pro" aria-labelledby="pricing-title">
           <div className="pricing-heading">
-            <div><p className="eyebrow">04 / Start simply. Go further.</p><h2 id="pricing-title">The essentials are free.<br />The possibilities grow.</h2></div>
+            <div><p className="eyebrow">05 / Start simply. Go further.</p><h2 id="pricing-title">The essentials are free.<br />The possibilities grow.</h2></div>
             <p>A useful writing app from the start. Pro adds more ways to organize, personalize, and work across your own cloud services.</p>
           </div>
           <div className="pricing-grid">
@@ -180,11 +206,11 @@ export default function HomePage() {
             <article className="pricing-card pro">
               <div className="plan-label"><span>NeoWriter / Pro</span><Sparkles size={18} aria-hidden="true" /></div>
               <h3>Make room for more.</h3>
-              <p>Everything in Free, with a little more range.<br />Monthly, yearly, or lifetime options in the app.</p>
+              <p>Everything in Free, with a little more range.<br />One purchase for iPhone, iPad, and Mac: monthly, yearly, or lifetime.</p>
               <ul className="check-list">{proFeatures.map((feature) => <li key={feature}><Check size={15} aria-hidden="true" />{feature}</li>)}</ul>
             </article>
           </div>
-          <p className="pricing-note">Review current prices, feature availability, and purchase terms in the app. AI availability varies by device, region, and provider.</p>
+          <p className="pricing-note">Try Pro free for 14 days, once per Apple Account. No payment, no automatic renewal: Pro simply ends. Review current prices, feature availability, and purchase terms in the app. AI availability varies by device, region, and provider.</p>
         </section>
 
         <section className="faq-section section-space shell" aria-labelledby="faq-title">
@@ -200,9 +226,9 @@ export default function HomePage() {
           <div className="shell">
             <Image src={sitePath("/images/app-icon.png")} alt="" width={64} height={64} />
             <h2 id="closing-title">The next page<br />is <em>yours.</em></h2>
-            <p>{APP_STORE_URL ? "Make a little room for your writing. Start with NeoWriter's free essentials on iPhone and iPad." : "A new chapter for NeoWriter. Coming soon to iPhone and iPad. A calmer place for everything you want to write."}</p>
+            <p>{APP_STORE_URL ? "Make a little room for your writing. Start with NeoWriter's free essentials on iPhone, iPad, and Mac." : "A new chapter for NeoWriter. Coming soon to iPhone, iPad, and Mac. A calmer place for everything you want to write."}</p>
             {APP_STORE_URL ? <LaunchLink /> : <a className="button button-primary" href={`mailto:${SUPPORT_EMAIL}?subject=NeoWriter%20launch%20inquiry`}>Get in touch<ArrowUpRight size={16} aria-hidden="true" /></a>}
-            <div className="closing-note">{APP_STORE_URL ? "IPHONE & IPAD / FREE ESSENTIALS, OPTIONAL PRO" : "IPHONE & IPAD / COMING SOON"}</div>
+            <div className="closing-note">{APP_STORE_URL ? "IPHONE, IPAD & MAC / FREE ESSENTIALS, OPTIONAL PRO" : "IPHONE, IPAD & MAC / COMING SOON"}</div>
           </div>
         </section>
       </main>

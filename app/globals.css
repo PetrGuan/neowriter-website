@@ -103,6 +103,10 @@ h1, h2, h3 { font-weight: 400; }
 .workspace-figure { padding: 38px 60px 0; background: #e8ece7; border: 1px solid #d6dfda; overflow: hidden; border-radius: 8px; }
 .workspace-screen { height: 640px; overflow: hidden; border: 6px solid #283238; border-bottom: none; border-radius: 22px 22px 0 0; box-shadow: 0 20px 50px rgb(37 50 58 / 12%); background: var(--paper); }
 .workspace-screen img { width: 100%; }
+.mac-section { padding-top: 0; }
+.mac-figure { padding-bottom: 38px; }
+.mac-screen { overflow: hidden; border: 1px solid #c9d1cc; border-radius: 12px; box-shadow: 0 20px 50px rgb(37 50 58 / 14%); background: var(--paper); }
+.mac-screen img { display: block; width: 100%; height: auto; }
 .figure-caption { display: flex; justify-content: space-between; gap: 20px; margin-top: 16px; font-size: 10px; color: var(--muted); line-height: 1.6; }
 .figure-caption span:first-child { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .07em; }
 .workspace-footnotes { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }

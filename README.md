@@ -1,6 +1,6 @@
 # NeoWriter Website
 
-The English marketing site for NeoWriter's new iPhone and iPad writing workspace.
+The English marketing site for NeoWriter's writing workspace on iPhone, iPad, and Mac.
 Warm paper, deep petrol ink, literary typography, and real application screenshots
 follow the app's Quiet Paper design language.
 

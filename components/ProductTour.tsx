@@ -12,7 +12,7 @@ const views = [
     title: "Less interface.\nMore room to think.",
     description:
       "A page that feels like a page. Markdown lives right alongside your prose, with a reading preview when you want a fresh perspective.",
-    points: ["Native writing on iPhone and iPad", "Markdown, images, and reading preview", "Your writing saved on this device"],
+    points: ["Native writing on iPhone, iPad, and Mac", "Markdown, images, and reading preview", "Your writing saved on this device"],
     image: "editor",
     alt: "NeoWriter's real iPhone editor showing Morning, Low Tide on a warm paper background",
     caption: "The editor · iPhone",
